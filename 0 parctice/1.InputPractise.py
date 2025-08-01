@@ -13,6 +13,7 @@
 # print(f"I was {adjective3}")
 
 #area cal
+
 # l = int(input("Enter the length : "))
 # w = int(input("Enter width : "))
 #
@@ -20,3 +21,13 @@
 #
 # print(area)
 
+#shoping cart
+
+item = input("item name you want to buy : ")
+price = float(input("What is the price: "))
+quantity = int(input("how many item you want to buy : "))
+
+total = price * quantity
+
+print(f"You have bought {quantity} x {item}")
+print(f"Your total: {round(total)}")
