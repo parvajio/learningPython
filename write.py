@@ -32,3 +32,18 @@
 #     json.dump(employee, file, indent=4)
 #     print("json file creted")
 
+import csv
+
+employees = [
+    ["Name", "age", "job"],
+    ["Parvaj", 30, "Developer"],
+    ["rajon", 69, "hacker"],
+    ["nahid", 27, "jni na"]
+]
+
+csv_file = "output.csv"
+
+with open(csv_file, "w", newline="") as file:
+    writer = csv.writer(file)
+    for row in employees:
+        writer.writerow(row)
